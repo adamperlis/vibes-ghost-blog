@@ -1,0 +1,80 @@
+{{!--
+    Parameters:
+    * feed (index, home, archive, recent)
+    * postFeedStyle (list, grid)
+    * showTitle (true, false)
+    * section_title (custom title)
+--}}
+
+<section class="vibes-post-section gh-outer">
+    <div class="vibes-post-inner gh-inner">
+        
+        {{#if showTitle}}
+            <div class="vibes-section-header">
+                <h2 class="vibes-section-title">{{#if section_title}}{{section_title}}{{else}}LATEST{{/if}}</h2>
+                <div class="vibes-section-line"></div>
+            </div>
+        {{/if}}
+
+        <div class="vibes-posts-grid">
+            {{!-- Homepage posts --}}
+            {{#match feed "home"}}
+                {{#get "posts" include="authors" limit="12"}}
+                    {{#foreach posts}}
+                        <article class="vibes-grid-post">
+                            {{#if feature_image}}
+                                <figure class="vibes-grid-image {{#match @custom.grid_image_aspect_ratio "1:1"}}{{/match}}{{#match @custom.grid_image_aspect_ratio "3:2"}}aspect-ratio-3-2{{/match}}{{#match @custom.grid_image_aspect_ratio "16:9"}}aspect-ratio-16-9{{/match}}">
+                                    <a href="{{url}}">
+                                        <img src="{{img_url feature_image size="m"}}" alt="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}}{{/if}}" loading="lazy">
+                                    </a>
+                                </figure>
+                            {{/if}}
+                            <div class="vibes-grid-content">
+                                <h3 class="vibes-grid-title"><a href="{{url}}">{{title}}</a></h3>
+                                <time class="vibes-post-date">{{date format="MMM DD, YYYY"}}</time>
+                            </div>
+                        </article>
+                    {{/foreach}}
+                {{/get}}
+            {{/match}}
+
+            {{!-- All posts --}}
+            {{#match feed "index"}}
+                {{#foreach posts}}
+                    <article class="vibes-grid-post">
+                        {{#if feature_image}}
+                            <figure class="vibes-grid-image {{#match @custom.grid_image_aspect_ratio "1:1"}}{{/match}}{{#match @custom.grid_image_aspect_ratio "3:2"}}aspect-ratio-3-2{{/match}}{{#match @custom.grid_image_aspect_ratio "16:9"}}aspect-ratio-16-9{{/match}}">
+                                <a href="{{url}}">
+                                    <img src="{{img_url feature_image size="m"}}" alt="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}}{{/if}}" loading="lazy">
+                                </a>
+                            </figure>
+                        {{/if}}
+                        <div class="vibes-grid-content">
+                            <h3 class="vibes-grid-title"><a href="{{url}}">{{title}}</a></h3>
+                            <time class="vibes-post-date">{{date format="MMM DD, YYYY"}}</time>
+                        </div>
+                    </article>
+                {{/foreach}}
+            {{/match}}
+
+            {{!-- Tag and author pages --}}
+            {{#match feed "archive"}}
+                {{#foreach posts}}
+                    <article class="vibes-grid-post">
+                        {{#if feature_image}}
+                            <figure class="vibes-grid-image {{#match @custom.grid_image_aspect_ratio "1:1"}}{{/match}}{{#match @custom.grid_image_aspect_ratio "3:2"}}aspect-ratio-3-2{{/match}}{{#match @custom.grid_image_aspect_ratio "16:9"}}aspect-ratio-16-9{{/match}}">
+                                <a href="{{url}}">
+                                    <img src="{{img_url feature_image size="m"}}" alt="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}}{{/if}}" loading="lazy">
+                                </a>
+                            </figure>
+                        {{/if}}
+                        <div class="vibes-grid-content">
+                            <h3 class="vibes-grid-title"><a href="{{url}}">{{title}}</a></h3>
+                            <time class="vibes-post-date">{{date format="MMM DD, YYYY"}}</time>
+                        </div>
+                    </article>
+                {{/foreach}}
+            {{/match}}
+        </div>
+    </div>
+</section>

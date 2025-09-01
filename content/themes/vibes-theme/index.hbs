@@ -1,0 +1,16 @@
+{{!< default}}
+{{!-- The tag above means: insert everything in this file into the body of the default.hbs template --}}
+
+<main class="gh-main">
+    {{!-- Include the hero section and main content layout --}}
+    {{> "components/header-content"}}
+    
+    {{!-- Include the CTA section --}}
+    {{> "components/cta"}}
+    
+    {{!-- Featured Posts Section --}}
+    {{> "components/featured"}}
+    
+    {{!-- Latest Posts Grid --}}
+    {{> "components/post-list" feed="index" postFeedStyle=@custom.post_feed_style showTitle=true}}
+</main>

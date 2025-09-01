@@ -1,0 +1,48 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Build outputs
+assets/built/
+dist/
+
+# Ghost files
+.ghost*
+
+# Development
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Media files - Video files can be very large (but not theme videos)
+*.mov
+*.avi
+*.mkv
+*.flv
+*.wmv
+*.m4v
+
+# Allow theme video files but ignore others
+*.mp4
+!assets/images/[BG]*.mp4
+!assets/images/*background*.mp4
+*.webm
+!assets/images/[BG]*.webm
+!assets/images/*background*.webm
+
+# Production zip files
+*.zip
+
+# Specific large media directories
+assets/media/
+assets/videos/

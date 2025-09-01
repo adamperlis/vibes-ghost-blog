@@ -1,0 +1,115 @@
+{{!-- Hero Section with VibeS Logo and Description --}}
+<section class="vibes-hero gh-outer">
+    <div class="vibes-hero-inner gh-inner">
+        {{!-- Frame 797 - Hero Container --}}
+        <div class="vibes-frame-797">
+                            {{!-- Frame 746 - Logo Container --}}
+                <div class="vibes-frame-746-logo">
+                    <div class="vibes-logo-background"></div>
+                    <div class="vibes-logo-text">
+                        <span id="char-v" class="vibes-char geist-font">V</span>
+                        <span id="char-i" class="vibes-char geist-font">i</span>
+                        <span id="char-b" class="vibes-char geist-font">b</span>
+                        <span id="char-e" class="vibes-char geist-font">e</span>
+                        <span id="char-s" class="vibes-char neuebit-font">S</span>
+                    </div>
+                </div>
+            
+            {{!-- Frame 796 - Text Content --}}
+            <div class="vibes-frame-796">
+                <h2 class="vibes-hero-heading">{{#if @custom.hero_heading}}{{@custom.hero_heading}}{{else}}WELCOME TO THE BUILDER ECONOMY{{/if}}</h2>
+                <p class="vibes-hero-description">{{#if @custom.hero_description}}{{@custom.hero_description}}{{else}}Vibes is where we track the culture, creativity, and chaos of building in public. From AI-generated films to weird indie experiments, from vibe coding to vibe marketing — we spotlight the tools, projects, and people shaping what's next. Expect trend breakdowns, behind-the-scenes looks at emerging tech, and raw dispatches from the builders redefining work, art, and internet culture.{{/if}}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{!-- Main Content Layout --}}
+<section class="vibes-main-content gh-outer">
+    <div class="vibes-content-inner gh-inner">
+        
+        {{!-- Three Column Layout --}}
+        <div class="vibes-layout">
+            
+            {{!-- Left Column: Large Featured Post --}}
+            <div class="vibes-left-column">
+                {{#foreach posts limit="1"}}
+                    <article class="vibes-hero-post">
+                                            {{#if feature_image}}
+                        <figure class="vibes-hero-image {{#match @custom.hero_image_aspect_ratio "1:1"}}aspect-ratio-1-1{{/match}}{{#match @custom.hero_image_aspect_ratio "3:2"}}aspect-ratio-3-2{{/match}}{{#match @custom.hero_image_aspect_ratio "16:9"}}aspect-ratio-16-9{{/match}}">
+                            <a href="{{url}}">
+                                <img src="{{img_url feature_image size="l"}}" alt="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}}{{/if}}">
+                            </a>
+                        </figure>
+                    {{/if}}
+                        <div class="vibes-hero-post-content">
+                            <h3 class="vibes-hero-post-title"><a href="{{url}}">{{title}}</a></h3>
+                            {{#if custom_excerpt}}
+                                <p class="vibes-hero-post-excerpt">{{custom_excerpt}}</p>
+                            {{/if}}
+                            <time class="vibes-post-date">{{date format="MMM DD, YYYY"}}</time>
+                        </div>
+                    </article>
+                {{/foreach}}
+                
+                {{!-- Middle Posts for Left Column --}}
+                <div class="vibes-left-secondary">
+                    {{#foreach posts from="2" limit="2"}}
+                        <article class="vibes-secondary-post">
+                            {{#if feature_image}}
+                                <figure class="vibes-secondary-image {{#match @custom.hero_image_aspect_ratio "1:1"}}aspect-ratio-1-1{{/match}}{{#match @custom.hero_image_aspect_ratio "3:2"}}aspect-ratio-3-2{{/match}}{{#match @custom.hero_image_aspect_ratio "16:9"}}aspect-ratio-16-9{{/match}}">
+                                    <a href="{{url}}">
+                                        <img src="{{img_url feature_image size="s"}}" alt="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}}{{/if}}">
+                                    </a>
+                                </figure>
+                            {{/if}}
+                            <div class="vibes-secondary-content">
+                                <h4 class="vibes-secondary-title"><a href="{{url}}">{{title}}</a></h4>
+                                <time class="vibes-post-date">{{date format="MMM DD, YYYY"}}</time>
+                            </div>
+                        </article>
+                    {{/foreach}}
+                    
+                    {{!-- Last post without image --}}
+                    {{#foreach posts from="4" limit="1"}}
+                        <article class="vibes-text-post">
+                            <h4 class="vibes-secondary-title"><a href="{{url}}">{{title}}</a></h4>
+                            <time class="vibes-post-date">{{date format="MMM DD, YYYY"}}</time>
+                        </article>
+                    {{/foreach}}
+                </div>
+            </div>
+            
+            {{!-- Right Column: Large Featured Post --}}
+            <div class="vibes-right-column">
+                {{#foreach posts from="5" limit="1"}}
+                    <article class="vibes-featured-post">
+                        {{#if feature_image}}
+                            <figure class="vibes-featured-image {{#match @custom.featured_image_aspect_ratio "1:1"}}aspect-ratio-1-1{{/match}}{{#match @custom.featured_image_aspect_ratio "3:2"}}aspect-ratio-3-2{{/match}}{{#match @custom.featured_image_aspect_ratio "16:9"}}aspect-ratio-16-9{{/match}}">
+                                <a href="{{url}}">
+                                    <img src="{{img_url feature_image size="l"}}" alt="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}}{{/if}}">
+                                </a>
+                            </figure>
+                        {{/if}}
+                        <div class="vibes-featured-content">
+                            {{#if primary_tag}}
+                                <span class="vibes-post-tag">{{primary_tag.name}}</span>
+                            {{/if}}
+                            <h3 class="vibes-featured-title"><a href="{{url}}">{{title}}</a></h3>
+                            {{#if excerpt}}
+                                <p class="vibes-featured-excerpt">{{excerpt words="35"}}</p>
+                            {{else}}
+                                {{#if custom_excerpt}}
+                                    <p class="vibes-featured-excerpt">{{custom_excerpt}}</p>
+                                {{else}}
+                                    <p class="vibes-featured-excerpt">{{content words="35"}}...</p>
+                                {{/if}}
+                            {{/if}}
+                            <time class="vibes-post-date">{{date format="MMM DD, YYYY"}}</time>
+                        </div>
+                    </article>
+                {{/foreach}}
+            </div>
+        </div>
+    </div>
+</section>

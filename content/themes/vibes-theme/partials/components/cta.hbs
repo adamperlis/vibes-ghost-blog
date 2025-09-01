@@ -1,0 +1,14 @@
+{{!-- Vibes CTA Section --}}
+<section class="vibes-cta gh-outer">
+    <video class="vibes-cta-video" autoplay muted loop playsinline>
+        <source src="{{asset "images/[BG] What will you build today- Copy 01.webm"}}" type="video/webm">
+        <source src="{{asset "images/[BG] What will you build today- Copy 01.mp4"}}" type="video/mp4">
+    </video>
+    <div class="vibes-cta-inner">
+        <div class="vibes-cta-content">
+            <h2 class="vibes-cta-title">{{#if @custom.cta_heading}}{{@custom.cta_heading}}{{else}}What will you build today?{{/if}}</h2>
+            <p class="vibes-cta-description">{{#if @custom.cta_description}}{{@custom.cta_description}}{{else}}Join the builder economy and create something amazing with the latest AI tools and creative platforms.{{/if}}</p>
+            <a class="vibes-cta-button gh-button" href="https://b150.ai/" target="_blank">{{#if @custom.cta_button_text}}{{@custom.cta_button_text}}{{else}}Start Building{{/if}}</a>
+        </div>
+    </div>
+</section>
