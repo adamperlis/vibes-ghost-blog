@@ -3409,7 +3409,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-fragment-mono);
+    font-family: var(--font-geist);
 }
 
 /* Navigation - Frame 697 */
@@ -5458,40 +5458,72 @@ input[placeholder*="search"]::placeholder {
 .vibes-content h4,
 .vibes-content h5,
 .vibes-content h6 {
-    font-family: var(--font-fragment-mono) !important;
+    font-family: var(--font-geist) !important;
+    font-weight: 400 !important;
+    line-height: 1.2 !important;
 }
 
-/* Post content h1 - larger size */
+/* Post content h1 - 1.56em / 21.875px */
 .vibes-content h1 {
-    font-size: 24px !important;
+    font-size: 1.56em !important;
     font-weight: 400 !important;
     line-height: 1.2 !important;
     letter-spacing: -0.02em !important;
-    text-transform: uppercase;
+    color: var(--vibes-text) !important;
     margin-top: 48px;
     margin-bottom: 24px;
 }
 
-/* Post content h2 - medium size */
+/* Post content h2 - 1.25em / 17.5px */
 .vibes-content h2 {
-    font-size: 18px !important;
+    font-size: 1.25em !important;
     font-weight: 400 !important;
     line-height: 1.2 !important;
     letter-spacing: -0.01em !important;
-    text-transform: uppercase;
+    color: var(--vibes-text) !important;
     margin-top: 36px;
     margin-bottom: 18px;
 }
 
-/* Post content h3 - smaller size */
+/* Post content h3 - 1rem / 14px */
 .vibes-content h3 {
-    font-size: 14px !important;
+    font-size: 1rem !important;
     font-weight: 400 !important;
     line-height: 1.2 !important;
     letter-spacing: 0.01em !important;
-    text-transform: uppercase;
+    color: var(--vibes-text) !important;
     margin-top: 24px;
     margin-bottom: 12px;
+}
+
+/* Post content h4 - 0.875em / 12.25px */
+.vibes-content h4 {
+    font-size: 0.875em !important;
+    font-weight: 400 !important;
+    line-height: 1.2 !important;
+    color: var(--vibes-text) !important;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Post content h5 - 0.75em / 10.5px */
+.vibes-content h5 {
+    font-size: 0.75em !important;
+    font-weight: 400 !important;
+    line-height: 1.2 !important;
+    color: var(--vibes-text) !important;
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+/* Post content h6 - 0.625em / 8.75px */
+.vibes-content h6 {
+    font-size: 0.625em !important;
+    font-weight: 400 !important;
+    line-height: 1.2 !important;
+    color: var(--vibes-text) !important;
+    margin-top: 12px;
+    margin-bottom: 6px;
 }
 
 /* Post tags - match homepage tag style */
@@ -5573,11 +5605,15 @@ input[placeholder*="search"]::placeholder {
     }
     
     .vibes-content h1 {
-        font-size: 20px !important;
+        font-size: 1.4em !important;
     }
     
     .vibes-content h2 {
-        font-size: 16px !important;
+        font-size: 1.125em !important;
+    }
+    
+    .vibes-content h3 {
+        font-size: 0.9em !important;
     }
     
     .vibes-card-title {
@@ -5603,7 +5639,15 @@ input[placeholder*="search"]::placeholder {
     }
     
     .vibes-content h1 {
-        font-size: 18px !important;
+        font-size: 1.25em !important;
+    }
+    
+    .vibes-content h2 {
+        font-size: 1em !important;
+    }
+    
+    .vibes-content h3 {
+        font-size: 0.875em !important;
     }
     
     .vibes-card-title {
