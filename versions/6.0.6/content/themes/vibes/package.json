@@ -1,0 +1,212 @@
+{
+    "name": "vibes",
+    "description": "A custom theme for the Vibes publication tracking builder economy culture",
+    "demo": "https://vibes.ghost.io",
+    "version": "1.5.0",
+    "engines": {
+        "ghost": ">=5.0.0"
+    },
+    "license": "MIT",
+    "scripts": {
+        "dev": "gulp",
+        "zip": "gulp zip",
+        "test": "gscan .",
+        "test:ci": "gscan --fatal --verbose .",
+        "pretest": "gulp build",
+        "preship": "yarn test",
+        "ship": "STATUS=$(git status --porcelain); echo $STATUS; if [ -z \"$STATUS\" ]; then yarn version && git push --follow-tags; else echo \"Uncomitted changes found.\" && exit 1; fi",
+        "postship": "git fetch && gulp release"
+    },
+    "author": {
+        "name": "Vibes Team",
+        "email": "hello@vibes.io",
+        "url": "https://vibes.io/"
+    },
+    "gpm": {
+        "type": "theme",
+        "categories": [
+            "Minimal",
+            "Magazine",
+            "Culture"
+        ]
+    },
+    "keywords": [
+        "ghost",
+        "theme",
+        "ghost-theme",
+        "culture",
+        "builders",
+        "technology"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/adamperlis/vibes-theme.git"
+    },
+    "bugs": "https://github.com/adamperlis/vibes-theme/issues",
+    "contributors": "https://github.com/adamperlis/vibes-theme/graphs/contributors",
+    "devDependencies": {
+        "@tryghost/release-utils": "0.8.1",
+        "autoprefixer": "10.4.7",
+        "beeper": "2.1.0",
+        "cssnano": "5.1.12",
+        "gscan": "4.48.0",
+        "gulp": "4.0.2",
+        "gulp-concat": "2.6.1",
+        "gulp-livereload": "4.0.2",
+        "gulp-postcss": "9.0.1",
+        "gulp-uglify": "3.0.2",
+        "gulp-zip": "5.1.0",
+        "inquirer": "8.2.4",
+        "postcss": "8.2.13",
+        "postcss-easy-import": "4.0.0",
+        "pump": "3.0.0"
+    },
+    "browserslist": [
+        "defaults"
+    ],
+    "config": {
+        "posts_per_page": 12,
+        "image_sizes": {
+            "xs": {
+                "width": 160
+            },
+            "s": {
+                "width": 320
+            },
+            "m": {
+                "width": 600
+            },
+            "l": {
+                "width": 960
+            },
+            "xl": {
+                "width": 1200
+            },
+            "xxl": {
+                "width": 2000
+            }
+        },
+        "card_assets": true,
+        "custom": {
+            "site_background_color": {
+                "type": "color",
+                "default": "#F2EFE9"
+            },
+            "hero_heading": {
+                "type": "text",
+                "default": "WELCOME TO THE BUILDER ECONOMY",
+                "description": "Large heading text for hero section"
+            },
+            "hero_description": {
+                "type": "text",
+                "default": "Vibes is where we track the culture, creativity, and chaos of building in public. From AI-generated films to weird indie experiments, from vibe coding to vibe marketing — we spotlight the tools, projects, and people shaping what's next.",
+                "description": "Description text for hero section"
+            },
+            "show_featured_posts": {
+                "type": "boolean",
+                "default": true,
+                "group": "homepage"
+            },
+            "post_feed_style": {
+                "type": "select",
+                "options": [
+                    "Grid",
+                    "List"
+                ],
+                "default": "Grid",
+                "group": "homepage"
+            },
+            "show_images_in_feed": {
+                "type": "boolean",
+                "default": true,
+                "group": "homepage"
+            },
+            "show_author": {
+                "type": "boolean",
+                "default": false,
+                "group": "homepage"
+            },
+            "show_publish_date": {
+                "type": "boolean",
+                "default": true,
+                "group": "homepage"
+            },
+            "post_card_aspect_ratio": {
+                "type": "select",
+                "options": [
+                    "16:9",
+                    "1:1",
+                    "3:2"
+                ],
+                "default": "16:9",
+                "description": "Aspect ratio for post card images",
+                "group": "post"
+            },
+            "hero_image_aspect_ratio": {
+                "type": "select",
+                "options": [
+                    "16:9",
+                    "1:1",
+                    "3:2"
+                ],
+                "default": "16:9",
+                "description": "Aspect ratio for hero section images",
+                "group": "post"
+            },
+            "featured_image_aspect_ratio": {
+                "type": "select",
+                "options": [
+                    "16:9",
+                    "1:1",
+                    "3:2"
+                ],
+                "default": "16:9",
+                "description": "Aspect ratio for featured section images",
+                "group": "post"
+            },
+            "grid_image_aspect_ratio": {
+                "type": "select",
+                "options": [
+                    "16:9",
+                    "1:1",
+                    "3:2"
+                ],
+                "default": "1:1",
+                "description": "Aspect ratio for grid layout images",
+                "group": "post"
+            },
+            "cta_heading": {
+                "type": "text",
+                "default": "Don't Wait for the Future. Build It.",
+                "description": "CTA section heading"
+            },
+            "cta_description": {
+                "type": "text",
+                "default": "A new professional network for the builders, not the followers. For the innovators, creators, founders, & doers. The ones turning ideas into products, income, and freedom",
+                "description": "CTA section description"
+            },
+            "cta_button_text": {
+                "type": "text",
+                "default": "JOIN B150",
+                "description": "CTA button text"
+            },
+            "podcast_spotify_url": {
+                "type": "text",
+                "default": "",
+                "description": "Spotify podcast URL",
+                "group": "podcast"
+            },
+            "podcast_youtube_url": {
+                "type": "text",
+                "default": "",
+                "description": "YouTube podcast URL",
+                "group": "podcast"
+            }
+        }
+    },
+    "renovate": {
+        "extends": [
+            "@tryghost:theme"
+        ]
+    }
+}

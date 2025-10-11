@@ -1,0 +1,173 @@
+{
+  "db": [
+    {
+      "meta": {
+        "exported_on": 1728491000000,
+        "version": "6.0.6"
+      },
+      "data": {
+        "posts": [
+          {
+            "id": "post-1",
+            "title": "Kitchen Sink: Testing All Content Types & Styles",
+            "slug": "kitchen-sink-content-test",
+            "mobiledoc": "{\"version\":\"0.3.1\",\"atoms\":[],\"cards\":[],\"markups\":[],\"sections\":[[1,\"p\",[[0,[],0,\"This is a comprehensive test post to showcase how the Vibes theme handles different content types. Let's explore every formatting option.\"]]]]}",
+            "html": "<p>This is a comprehensive test post to showcase how the Vibes theme handles different content types. We're testing typography, images, code blocks, tables, lists, and every other element you might use in a real blog post. This is your complete style guide.</p><figure class=\"kg-card kg-image-card kg-width-wide\"><img src=\"https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=2000&q=80\" class=\"kg-image\" alt=\"Developer workspace with multiple monitors\" loading=\"lazy\"><figcaption>A modern developer workspace showcasing the tools of the builder economy</figcaption></figure><h2>Typography & Text Formatting</h2><p>Let's start with the basics. This is a regular paragraph of text. It should have comfortable line-height, proper spacing, and excellent readability. Ghost's default typography is solid, but your theme needs to handle long-form content gracefully.</p><p>Here's another paragraph with <strong>bold text for emphasis</strong>, <em>italic text for subtle stress</em>, and <strong><em>bold italic for maximum impact</em></strong>. You can also add <code>inline code</code> for technical terms like <code>npm install</code> or <code>git push origin main</code>.</p><p>Here's a paragraph with a <a href=\"https://example.com\">standard hyperlink</a> that should be clearly distinguishable from body text. Links are crucial for web content, so make sure they're accessible and obvious.</p><h3>Heading Level 3: Sub-sections</h3><p>Third-level headings help organize content into digestible chunks. They should be visually distinct from H2s but still maintain hierarchy.</p><h4>Heading Level 4: Detailed Breakdowns</h4><p>Fourth-level headings are less common but necessary for complex topics. They provide even more granular organization without overwhelming the reader.</p><h5>Heading Level 5: Deep Dives</h5><p>You'll rarely need H5, but it's good to style them anyway for comprehensive documentation or technical posts.</p><h6>Heading Level 6: Maximum Depth</h6><p>The deepest level of heading hierarchy. Honestly, if you're using H6, you might want to split your content into multiple posts!</p><h2>Lists: Organized Information</h2><p>Lists are essential for scannable content. Your theme should handle both ordered and unordered lists, including nested variations.</p><h3>Unordered List</h3><ul><li>First item in a simple list</li><li>Second item with <strong>bold text</strong> and <em>italic text</em></li><li>Third item demonstrating nesting:<ul><li>Nested item one with <code>inline code</code></li><li>Nested item two with a <a href=\"#\">link</a></li><li>Even deeper nesting:<ul><li>Third level nesting</li><li>Another third level item</li></ul></li></ul></li><li>Fourth top-level item showing paragraph spacing</li><li>Final item to test list ending margins</li></ul><h3>Ordered List</h3><ol><li>First step: Plan your content strategy</li><li>Second step: Research your audience</li><li>Third step: Create high-quality content</li><li>Fourth step: Promote across channels</li><li>Fifth step: Analyze and iterate</li></ol><h3>Mixed Lists</h3><p>Sometimes you need ordered lists with unordered sub-items, or vice versa:</p><ol><li>Main task with sub-requirements:<ul><li>Sub-requirement A</li><li>Sub-requirement B</li></ul></li><li>Another main task with numbered steps:<ol><li>Sub-step one</li><li>Sub-step two</li></ol></li></ol><h2>Blockquotes: Highlighting Important Thoughts</h2><blockquote><p>\"The best way to predict the future is to invent it.\" - Alan Kay</p></blockquote><p>Blockquotes are perfect for highlighting important quotes, testimonials, or pulling out key insights from your content. They should be visually distinct and easy to scan.</p><blockquote><p>\"Build something people want. That's the whole game. Everything else is commentary.\" - Paul Graham</p></blockquote><p>You can also use blockquotes for longer passages:</p><blockquote><p>The builder economy represents a fundamental shift in how people approach work and value creation. It's not just about side hustles or gig work—it's about individuals taking full ownership of their economic destiny.</p><p>This movement is enabled by technology, but driven by a desire for autonomy, creativity, and direct connection with audiences. The tools have never been better, and the barriers have never been lower.</p></blockquote><h2>Code Blocks: For Technical Content</h2><p>If you're writing technical content, code blocks are essential. They should have proper syntax highlighting, good contrast, and be easily readable.</p><p>Here's some JavaScript demonstrating the build-in-public philosophy:</p><pre><code class=\"language-javascript\">// Building in public: Share your journey\nfunction buildInPublic() {\n  const idea = generateIdea();\n  const product = ship(idea);\n  \n  // The magic happens here\n  while (product.isAlive) {\n    const metrics = product.getMetrics();\n    tweet(metrics); // Share everything\n    \n    const feedback = collectFeedback();\n    iterate(product, feedback);\n    \n    if (product.isSuccessful()) {\n      celebrate();\n    }\n  }\n  \n  return product.revenue;\n}\n\n// Key principle: transparency beats polish\nconst success = buildInPublic();</code></pre><p>And here's some Python showing the \"vibe coding\" approach:</p><pre><code class=\"language-python\"># Vibe coding: Ship fast, iterate faster\ndef vibe_code():\n    \"\"\"Skip the best practices, ship fast\"\"\"\n    idea = \"Something cool\"\n    \n    # Traditional developers: \"But what about unit tests?\"\n    # Vibe coders: \"Ship it and see if anyone uses it\"\n    mvp = build_quickly(idea)\n    \n    if mvp.works():\n        print(\"Let's go!\")\n        return ship(mvp)\n    \n    # If it doesn't work, try something else\n    return try_again()\n\n# The secret: velocity beats perfection\nresult = vibe_code()</code></pre><p>CSS for styling your personal brand:</p><pre><code class=\"language-css\">/* Modern, minimal design system */\n:root {\n  --cream: #F2EFE9;\n  --black: #1a1a1a;\n  --accent: #0066cc;\n}\n\n.builder-card {\n  background: var(--cream);\n  border-radius: 12px;\n  padding: 2rem;\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);\n  transition: transform 0.2s ease;\n}\n\n.builder-card:hover {\n  transform: translateY(-4px);\n}</code></pre><figure class=\"kg-card kg-image-card\"><img src=\"https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&q=80\" class=\"kg-image\" alt=\"Code on screen\" loading=\"lazy\"><figcaption>Clean code vs. vibe code: the eternal debate continues</figcaption></figure><h2>Horizontal Rules: Visual Breaks</h2><p>Sometimes you need to create a clear visual separation between sections. Horizontal rules are perfect for this:</p><hr><p>Content continues after the break. This is useful for topic transitions or separating distinct sections within a longer post.</p><hr><h2>Tables: Structured Data</h2><p>Tables are essential for presenting structured data, comparisons, or organized information.</p><table><thead><tr><th>Tool</th><th>Category</th><th>Price</th><th>Best For</th><th>Difficulty</th></tr></thead><tbody><tr><td>Webflow</td><td>No-Code</td><td>$14/mo</td><td>Designers</td><td>Medium</td></tr><tr><td>Bubble</td><td>No-Code</td><td>$29/mo</td><td>Web Apps</td><td>Medium</td></tr><tr><td>Airtable</td><td>Database</td><td>$20/mo</td><td>Operations</td><td>Easy</td></tr><tr><td>Ghost</td><td>CMS</td><td>$9/mo</td><td>Creators</td><td>Easy</td></tr><tr><td>Notion</td><td>Workspace</td><td>Free</td><td>Documentation</td><td>Easy</td></tr><tr><td>Framer</td><td>Design</td><td>$15/mo</td><td>Landing Pages</td><td>Medium</td></tr></tbody></table><p>Tables should be responsive and readable on mobile devices. Consider how they'll reflow or scroll on smaller screens.</p><h2>Image Layouts: Testing Visual Content</h2><p>Images are crucial for engaging content. Your theme should handle different image sizes and layouts gracefully.</p><figure class=\"kg-card kg-image-card kg-width-full\"><img src=\"https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=2000&q=80\" class=\"kg-image\" alt=\"Team collaborating\" loading=\"lazy\"><figcaption>Full-width images make a bold statement and draw attention</figcaption></figure><p>Full-width images are great for hero shots or breaking up long text sections. They should extend to the edges of the content area.</p><figure class=\"kg-card kg-image-card\"><img src=\"https://images.unsplash.com/photo-1551434678-e076c223a692?w=1200&q=80\" class=\"kg-image\" alt=\"Startup team planning\" loading=\"lazy\"><figcaption>Regular images sit within the content width</figcaption></figure><p>Standard images should maintain proper aspect ratios and not distort. They should also have smooth loading behavior.</p><h2>Callouts: Highlighting Key Information</h2><p>Callout boxes are perfect for tips, warnings, or important information that needs to stand out.</p><div class=\"kg-card kg-callout-card kg-callout-card-blue\"><div class=\"kg-callout-text\"><strong>💡 Pro Tip:</strong> Always build in public. Share your journey, wins, and losses. Your audience will appreciate the transparency and feel invested in your success.</div></div><div class=\"kg-card kg-callout-card kg-callout-card-yellow\"><div class=\"kg-callout-text\"><strong>⚠️ Warning:</strong> Don't spend six months building in stealth mode. Get feedback early and often. Validate your assumptions before you're too invested.</div></div><div class=\"kg-card kg-callout-card kg-callout-card-green\"><div class=\"kg-callout-text\"><strong>✅ Success Factor:</strong> Ship small, ship fast, and iterate based on real user feedback. Perfection is the enemy of progress.</div></div><div class=\"kg-card kg-callout-card kg-callout-card-red\"><div class=\"kg-callout-text\"><strong>🚨 Common Mistake:</strong> Building features nobody asked for. Talk to your users before writing a single line of code.</div></div><h2>Nested Content: Complex Structures</h2><p>Sometimes you need complex nested structures combining multiple elements:</p><ul><li><strong>Typography Category</strong><ul><li>Item with <em>italic text</em></li><li>Item with <code>inline code</code></li><li>Item with <a href=\"#\">a hyperlink</a></li><li>Item with <strong>bold</strong> and <em>italic</em> combined</li></ul></li><li><strong>Interactive Elements</strong><ol><li>First numbered sub-item</li><li>Second with <code>code</code></li><li>Third with nested list:<ul><li>Deep nesting item A</li><li>Deep nesting item B</li></ul></li></ol></li><li><strong>Media Elements</strong><ul><li>Images (standard, wide, full)</li><li>Videos (embedded players)</li><li>Audio players</li><li>Galleries</li></ul></li></ul><h2>Long-Form Content: Reading Experience</h2><p>The builder economy is fundamentally reshaping how we think about work, creativity, and value creation. What started as a niche movement of indie hackers and side project enthusiasts has evolved into a full-blown cultural shift that's challenging traditional employment models.</p><p>Traditional employment offered security in exchange for time and creativity. You showed up, did your job, and collected a paycheck. It was predictable, stable, and ultimately limiting. The builder economy flips this model entirely.</p><p>In the builder economy, individuals take direct ownership of their economic destiny. They create products, build audiences, and generate income streams on their own terms. The relationship between creator and audience is direct, unmediated by corporate structures or gatekeepers.</p><p>This isn't just about technology or tools—though AI, no-code platforms, and creator tools certainly enable it. It's about a mindset shift: from permission to agency, from employment to ownership, from following to building.</p><p>The tools have never been better. Webflow lets designers build production-ready websites without code. Bubble enables non-technical founders to build complex web applications. Ghost provides creators with a powerful publishing platform. Stripe Connect makes it trivial to handle payments and subscriptions.</p><p>But tools alone don't explain the builder economy. The real driver is cultural: a generation that watched their parents sacrifice for jobs that didn't reciprocate loyalty, that saw the creative class exploited by platforms, that understood the internet made direct relationships possible.</p><p>Building in public has become the defining practice of this movement. Founders share their revenue numbers, their struggles, their failures. Creators document their entire journey, creating meta-content about the process of creating content. This transparency builds trust, attracts audiences, and creates accountability.</p><p>The results speak for themselves: solo founders reaching $10K MRR in months, creators building six-figure businesses from bedroom studios, developers shipping products that compete with venture-backed startups—all without permission, without gatekeepers, without compromise.</p><h2>Embedded Content: Media Integration</h2><p>Your theme should handle embedded content from various platforms. While we can't embed actual iframes in this test, your theme should style:</p><ul><li>YouTube videos</li><li>Twitter/X tweets</li><li>CodePen demos</li><li>Spotify players</li><li>Instagram posts</li></ul><h2>Special Characters & Symbols</h2><p>Your theme should handle special characters gracefully:</p><ul><li>Em dashes—like this—and en dashes (2020–2025)</li><li>Quotes: \"double\" and 'single'</li><li>Smart quotes: "curly" and 'pretty'</li><li>Symbols: © ® ™ § † ‡</li><li>Currency: $ € £ ¥</li><li>Math: × ÷ ± ≠ ≈ ∞</li><li>Arrows: → ← ↑ ↓ ⇒ ⇐</li><li>Emojis: 🚀 💡 ✅ ⚠️ 🎨 🔥</li></ul><h2>Accessibility Considerations</h2><p>Your theme should prioritize accessibility:</p><ol><li><strong>Color Contrast:</strong> Ensure text meets WCAG AA standards (4.5:1 for body text, 3:1 for large text)</li><li><strong>Focus Indicators:</strong> Keyboard navigation should be obvious and clear</li><li><strong>Alt Text:</strong> All images should support descriptive alt text</li><li><strong>Heading Hierarchy:</strong> Maintain proper H1 → H6 structure</li><li><strong>Link Text:</strong> Links should make sense out of context (no \"click here\")</li><li><strong>Responsive Typography:</strong> Text should scale appropriately on all devices</li></ol><h2>Responsive Design Testing</h2><p>This content should look great on:</p><ul><li>Desktop (1920px+)</li><li>Laptop (1366px–1919px)</li><li>Tablet (768px–1365px)</li><li>Mobile (320px–767px)</li></ul><p>Pay special attention to:</p><ul><li>Line length (45-75 characters is ideal)</li><li>Touch targets (minimum 44x44px)</li><li>Image scaling</li><li>Table behavior</li><li>Code block overflow</li></ul><h2>Performance Considerations</h2><p>Your theme should be fast:</p><ul><li>Lazy load images</li><li>Minimize CSS and JavaScript</li><li>Use system fonts or optimize web fonts</li><li>Implement proper caching headers</li><li>Optimize for Core Web Vitals</li></ul><h2>Conclusion</h2><p>This kitchen sink post demonstrates the full range of content types and formatting options available in Ghost. Use it to test:</p><ul><li>Typography scales and hierarchy</li><li>Spacing and rhythm (vertical and horizontal)</li><li>Color and contrast (accessibility)</li><li>Code syntax highlighting</li><li>Responsive behavior (mobile, tablet, desktop)</li><li>Image handling (different sizes and layouts)</li><li>List styling (ordered, unordered, nested)</li><li>Table presentation</li><li>Special content (callouts, quotes, code)</li><li>Reading experience (line length, line height, contrast)</li></ul><p>A well-designed theme handles all these elements seamlessly, creating a cohesive reading experience that serves the content without drawing attention to itself. The best design is invisible—it just works.</p><p>Now go forth and build something awesome! 🚀</p>",
+            "feature_image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=2000&q=80",
+            "featured": true,
+            "type": "post",
+            "status": "published",
+            "published_at": 1728401000000,
+            "published_by": 1,
+            "meta_title": null,
+            "meta_description": null,
+            "author_id": 1,
+            "created_at": 1728401000000,
+            "created_by": 1,
+            "updated_at": 1728401000000,
+            "updated_by": 1
+          },
+          {
+            "id": "post-2",
+            "title": "Vibe Coding: Why Developers Are Ditching Best Practices",
+            "slug": "vibe-coding-ditching-best-practices",
+            "mobiledoc": "{\"version\":\"0.3.1\",\"atoms\":[],\"cards\":[],\"markups\":[],\"sections\":[[1,\"p\",[[0,[],0,\"The new generation of developers doesn't care about your clean code principles. They're shipping products in days that would have taken months using \\\"proper\\\" software engineering.\"]]]]}",
+            "html": "<p>The new generation of developers doesn't care about your clean code principles. They're shipping products in days that would have taken months using \"proper\" software engineering.</p><p>Call it vibe coding, call it chaos engineering, call it whatever you want. The results speak for themselves: profitable products, happy users, and a fraction of the development time.</p><p>Maybe we've been overthinking this whole programming thing.</p>",
+            "feature_image": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=2000&q=80",
+            "featured": true,
+            "type": "post",
+            "status": "published",
+            "published_at": 1728314600000,
+            "published_by": 1,
+            "meta_title": null,
+            "meta_description": null,
+            "author_id": 1,
+            "created_at": 1728314600000,
+            "created_by": 1,
+            "updated_at": 1728314600000,
+            "updated_by": 1
+          },
+          {
+            "id": "post-3",
+            "title": "The $10K MRR Solo Founder: Building in Public Works",
+            "slug": "10k-mrr-solo-founder",
+            "mobiledoc": "{\"version\":\"0.3.1\",\"atoms\":[],\"cards\":[],\"markups\":[],\"sections\":[[1,\"p\",[[0,[],0,\"Sarah launched her SaaS product six months ago. No co-founder. No VC money. No marketing team. Just her, Twitter, and radical transparency.\"]]]]}",
+            "html": "<p>Sarah launched her SaaS product six months ago. No co-founder. No VC money. No marketing team. Just her, Twitter, and radical transparency.</p><p>Today she's at $10K MRR. Her secret? Building in public. Every feature, every bug, every revenue milestone shared with her growing audience of 50K followers who feel invested in her journey.</p><p>The builder economy rewards authenticity over polish. Show your work, share your struggles, grow your tribe.</p>",
+            "feature_image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=2000&q=80",
+            "featured": false,
+            "type": "post",
+            "status": "published",
+            "published_at": 1728228200000,
+            "published_by": 1,
+            "meta_title": null,
+            "meta_description": null,
+            "author_id": 1,
+            "created_at": 1728228200000,
+            "created_by": 1,
+            "updated_at": 1728228200000,
+            "updated_by": 1
+          },
+          {
+            "id": "post-4",
+            "title": "No-Code Tools Hit $1B Valuation: The Developers Strike Back",
+            "slug": "no-code-tools-billion-valuation",
+            "mobiledoc": "{\"version\":\"0.3.1\",\"atoms\":[],\"cards\":[],\"markups\":[],\"sections\":[[1,\"p\",[[0,[],0,\"Webflow, Bubble, and Airtable are changing everything. Non-technical founders are building complex applications that would have required engineering teams just five years ago.\"]]]]}",
+            "html": "<p>Webflow, Bubble, and Airtable are changing everything. Non-technical founders are building complex applications that would have required engineering teams just five years ago.</p><p>Traditional developers are divided: some see it as a threat, others as liberation from boring CRUD apps. The truth? No-code is creating more opportunities than it's destroying.</p><p>When everyone can build, the quality of ideas becomes the competitive advantage, not technical skills.</p>",
+            "feature_image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=2000&q=80",
+            "featured": false,
+            "type": "post",
+            "status": "published",
+            "published_at": 1728141800000,
+            "published_by": 1,
+            "meta_title": null,
+            "meta_description": null,
+            "author_id": 1,
+            "created_at": 1728141800000,
+            "created_by": 1,
+            "updated_at": 1728141800000,
+            "updated_by": 1
+          },
+          {
+            "id": "post-5",
+            "title": "Indie Hackers vs. Venture Capital: A False Choice",
+            "slug": "indie-hackers-vs-venture-capital",
+            "mobiledoc": "{\"version\":\"0.3.1\",\"atoms\":[],\"cards\":[],\"markups\":[],\"sections\":[[1,\"p\",[[0,[],0,\"The internet loves a binary debate. Bootstrap vs. VC. Indie hacker vs. unicorn chaser. Slow growth vs. blitzscaling.\"]]]]}",
+            "html": "<p>The internet loves a binary debate. Bootstrap vs. VC. Indie hacker vs. unicorn chaser. Slow growth vs. blitzscaling.</p><p>But the most successful builders know: it's not either/or. It's about choosing the right model for your specific business, market, and life goals. Some ideas need capital, others don't.</p><p>Stop arguing about funding strategies and start building something people want. The rest is just tactics.</p>",
+            "feature_image": "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=2000&q=80",
+            "featured": false,
+            "type": "post",
+            "status": "published",
+            "published_at": 1728055400000,
+            "published_by": 1,
+            "meta_title": null,
+            "meta_description": null,
+            "author_id": 1,
+            "created_at": 1728055400000,
+            "created_by": 1,
+            "updated_at": 1728055400000,
+            "updated_by": 1
+          },
+          {
+            "id": "post-6",
+            "title": "The Creator Economy Meets Web3: Hype or Future?",
+            "slug": "creator-economy-meets-web3",
+            "mobiledoc": "{\"version\":\"0.3.1\",\"atoms\":[],\"cards\":[],\"markups\":[],\"sections\":[[1,\"p\",[[0,[],0,\"NFTs crashed. DeFi is struggling. But the core idea of Web3 - creators owning their audience and monetization - is more relevant than ever.\"]]]]}",
+            "html": "<p>NFTs crashed. DeFi is struggling. But the core idea of Web3 - creators owning their audience and monetization - is more relevant than ever.</p><p>Smart creators are using blockchain tech not for speculation, but for utility: membership tokens, direct fan relationships, and platform independence.</p><p>The hype is dead. The actual use cases are just getting started.</p>",
+            "feature_image": "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=2000&q=80",
+            "featured": false,
+            "type": "post",
+            "status": "published",
+            "published_at": 1727969000000,
+            "published_by": 1,
+            "meta_title": null,
+            "meta_description": null,
+            "author_id": 1,
+            "created_at": 1727969000000,
+            "created_by": 1,
+            "updated_at": 1727969000000,
+            "updated_by": 1
+          }
+        ],
+        "tags": [
+          {
+            "id": "tag-1",
+            "name": "AI",
+            "slug": "ai",
+            "description": "Artificial Intelligence and Machine Learning"
+          },
+          {
+            "id": "tag-2",
+            "name": "Building in Public",
+            "slug": "building-in-public",
+            "description": "Transparent entrepreneurship"
+          },
+          {
+            "id": "tag-3",
+            "name": "No-Code",
+            "slug": "no-code",
+            "description": "Building without traditional coding"
+          }
+        ],
+        "posts_tags": [
+          {
+            "post_id": "post-1",
+            "tag_id": "tag-1"
+          },
+          {
+            "post_id": "post-2",
+            "tag_id": "tag-1"
+          },
+          {
+            "post_id": "post-3",
+            "tag_id": "tag-2"
+          },
+          {
+            "post_id": "post-4",
+            "tag_id": "tag-3"
+          }
+        ]
+      }
+    }
+  ]
+}
+

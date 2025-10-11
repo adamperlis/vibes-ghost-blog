@@ -11,9 +11,13 @@
     }
   },
   "mail": {
-    "transport": "Direct"
+    "transport": "sendmail",
+    "options": {
+      "path": "/usr/sbin/sendmail"
+    }
   },
   "logging": {
+    "level": "info",
     "transports": [
       "file",
       "stdout"

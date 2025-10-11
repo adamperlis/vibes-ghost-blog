@@ -168,14 +168,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
         
-        // Also make featured cards visible immediately so all are shown
-        const featuredCards = document.querySelectorAll('.vibes-featured-card');
-        featuredCards.forEach((card) => {
-            if (card.classList.contains('fade-in')) {
-                card.classList.add('visible');
-            }
-        });
-        
         // Mark that initial content has been handled
         initialContentHandled = true;
     }

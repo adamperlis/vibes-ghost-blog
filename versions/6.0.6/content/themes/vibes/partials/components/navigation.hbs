@@ -1,0 +1,88 @@
+<nav class="gh-navigation vibes-nav">
+    {{!-- Frame 697 - Main Navigation Container --}}
+    <div class="vibes-nav-frame-697">
+        
+        {{!-- Frame 736 - Left Section --}}
+        <div class="vibes-nav-frame-736">
+            {{!-- B150 Logo --}}
+            <div class="vibes-nav-b150">
+                <a href="{{@site.url}}">
+                {{#if @site.logo}}
+                    <img src="{{@site.logo}}" alt="{{@site.title}}">
+                {{else}}
+                    {{@site.title}}
+                {{/if}}   
+                </a>
+            </div>
+            
+            {{!-- Frame 20 - Search Container --}}
+            <div class="vibes-nav-frame-20" data-ghost-search>
+                {{!-- Frame 719 - Search Inner --}}
+                <div class="vibes-nav-frame-719">
+                    {{!-- Frame - Icon Container --}}
+                    <div class="vibes-nav-icon-frame">
+                        {{!-- Magnifying Glass Icon --}}
+                        <div class="vibes-nav-magnifying-glass">
+                            {{> "icons/search"}}
+                        </div>
+                    </div>
+                    {{!-- SEARCH Text --}}
+                    <div class="vibes-nav-search-text">SEARCH</div>
+                </div>
+            </div>
+            
+            {{!-- All Articles Link --}}
+            <div class="vibes-nav-all-articles">
+                <a href="{{@site.url}}/all-articles/">All Articles</a>
+            </div>
+            
+            {{!-- Podcast Link --}}
+            <div class="vibes-nav-podcast">
+                <a href="{{@site.url}}/podcast/">Podcast</a>
+            </div>
+
+            {{!-- Mobile Hamburger Menu --}}
+            <div class="vibes-nav-hamburger">
+                <button class="vibes-hamburger-btn" aria-label="Menu">
+                    <span class="vibes-hamburger-line"></span>
+                    <span class="vibes-hamburger-line"></span>
+                    <span class="vibes-hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+
+        {{!-- Frame 735 - Right Section --}}
+        <div class="vibes-nav-frame-735">
+            {{!-- Back to B150 Button --}}
+            <div class="vibes-nav-frame-back-b150">
+                <a href="https://b150.ai">
+                    <svg class="vibes-nav-arrow-left" width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    BACK TO B150
+                </a>
+            </div>
+            {{!-- Frame 690 - Subscribe Button --}}
+            <div class="vibes-nav-frame-690">
+                <a href="#/portal/signup" data-portal="signup">SUBSCRIBE</a>
+            </div>
+        </div>
+
+        {{!-- Mobile Menu Overlay --}}
+        <div class="vibes-mobile-menu">
+            <div class="vibes-mobile-menu-content">
+                <div class="vibes-mobile-menu-links">
+                    <a href="https://b150.ai" class="vibes-mobile-menu-link vibes-mobile-back-link">
+                        <svg class="vibes-mobile-arrow-left" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Back to B150
+                    </a>
+                    <a href="{{@site.url}}/all-articles/" class="vibes-mobile-menu-link">All Articles</a>
+                    <a href="{{@site.url}}/podcast/" class="vibes-mobile-menu-link">Podcast</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</nav>

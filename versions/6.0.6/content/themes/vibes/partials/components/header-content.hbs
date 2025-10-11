@@ -31,9 +31,9 @@
         {{!-- Three Column Layout --}}
         <div class="vibes-layout">
             
-            {{!-- Left Column: Posts 2-5 --}}
+            {{!-- Left Column: Large Featured Post --}}
             <div class="vibes-left-column">
-                {{#foreach posts from="2" limit="1"}}
+                {{#foreach posts limit="1"}}
                     <article class="vibes-hero-post">
                                             {{#if feature_image}}
                         <figure class="vibes-hero-image {{#match @custom.hero_image_aspect_ratio "1:1"}}aspect-ratio-1-1{{/match}}{{#match @custom.hero_image_aspect_ratio "3:2"}}aspect-ratio-3-2{{/match}}{{#match @custom.hero_image_aspect_ratio "16:9"}}aspect-ratio-16-9{{/match}}">
@@ -54,7 +54,7 @@
                 
                 {{!-- Middle Posts for Left Column --}}
                 <div class="vibes-left-secondary">
-                    {{#foreach posts from="3" limit="2"}}
+                    {{#foreach posts from="2" limit="2"}}
                         <article class="vibes-secondary-post">
                             {{#if feature_image}}
                                 <figure class="vibes-secondary-image {{#match @custom.hero_image_aspect_ratio "1:1"}}aspect-ratio-1-1{{/match}}{{#match @custom.hero_image_aspect_ratio "3:2"}}aspect-ratio-3-2{{/match}}{{#match @custom.hero_image_aspect_ratio "16:9"}}aspect-ratio-16-9{{/match}}">
@@ -71,7 +71,7 @@
                     {{/foreach}}
                     
                     {{!-- Last post without image --}}
-                    {{#foreach posts from="5" limit="1"}}
+                    {{#foreach posts from="4" limit="1"}}
                         <article class="vibes-text-post">
                             <h4 class="vibes-secondary-title"><a href="{{url}}">{{title}}</a></h4>
                             <time class="vibes-post-date">{{date format="MMM DD, YYYY"}}</time>
@@ -80,9 +80,9 @@
                 </div>
             </div>
             
-            {{!-- Right Column: Most Recent Post with Large Featured Image --}}
+            {{!-- Right Column: Large Featured Post --}}
             <div class="vibes-right-column">
-                {{#foreach posts limit="1"}}
+                {{#foreach posts from="5" limit="1"}}
                     <article class="vibes-featured-post">
                         {{#if feature_image}}
                             <figure class="vibes-featured-image {{#match @custom.featured_image_aspect_ratio "1:1"}}aspect-ratio-1-1{{/match}}{{#match @custom.featured_image_aspect_ratio "3:2"}}aspect-ratio-3-2{{/match}}{{#match @custom.featured_image_aspect_ratio "16:9"}}aspect-ratio-16-9{{/match}}">
