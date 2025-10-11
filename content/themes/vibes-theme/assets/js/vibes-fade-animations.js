@@ -170,8 +170,11 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Also make featured cards visible immediately so all are shown
         const featuredCards = document.querySelectorAll('.vibes-featured-card');
-        featuredCards.forEach((card) => {
+        console.log('Found featured cards:', featuredCards.length);
+        featuredCards.forEach((card, index) => {
+            console.log(`Featured card ${index}:`, card.className);
             if (card.classList.contains('fade-in')) {
+                console.log(`Adding visible to featured card ${index}`);
                 card.classList.add('visible');
             }
         });
