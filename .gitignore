@@ -4,6 +4,8 @@
 content/logs/
 content/data/ghost-local.db*
 content/data/ghost-dev.db*
+content/data/*.json
+versions/*/content/data/*.json
 
 # Node.js
 node_modules/
