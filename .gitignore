@@ -60,3 +60,11 @@ jspm_packages/
 # Yarn Integrity file
 .yarn-integrity
 
+# Large media files
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
+*.flv
+
