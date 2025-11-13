@@ -1,0 +1,69 @@
+{{!-- 
+  Website and Organization Schema for homepage
+  Includes SearchAction for Google search box feature
+--}}
+
+{{#is "home"}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "{{@site.url}}#website",
+      "url": "{{@site.url}}",
+      "name": "{{@site.title}}",
+      "description": "{{@site.description}}",
+      "publisher": {
+        "@id": "{{@site.url}}#organization"
+      },
+      "inLanguage": "en-US",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "{{@site.url}}/?s={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "{{@site.url}}#organization",
+      "name": "Vibes",
+      "alternateName": "Vibes Publication",
+      "url": "{{@site.url}}",
+      "description": "Where we track the culture, creativity, and chaos of building in public. From AI-generated films to weird indie experiments, from vibe coding to vibe marketing — we spotlight the tools, projects, and people shaping what's next.",
+      {{#if @site.logo}}
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{img_url @site.logo}}",
+        "@id": "{{@site.url}}#logo"
+      },
+      "image": {
+        "@id": "{{@site.url}}#logo"
+      },
+      {{/if}}
+      "sameAs": [
+        "https://github.com/adamperlis/vibes-theme"
+      ],
+      "foundingDate": "2024",
+      "founder": {
+        "@type": "Person",
+        "name": "Adam Perlis"
+      },
+      "knowsAbout": [
+        "Builder Economy",
+        "AI Technology",
+        "Creative Technology",
+        "Building in Public",
+        "Indie Development",
+        "Internet Culture"
+      ],
+      "publishingPrinciples": "{{@site.url}}/about/"
+    }
+  ]
+}
+</script>
+{{/is}}
+

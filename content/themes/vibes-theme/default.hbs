@@ -55,6 +55,12 @@
     {{!-- This tag outputs all your advanced SEO meta, structured data, and other important settings, it should always be the last tag before the closing head tag --}}
     {{ghost_head}}
 
+    {{!-- Enhanced custom schema for better SEO and rich search results --}}
+    {{> "schema/website-schema"}}
+    {{> "schema/enhanced-schema"}}
+    {{> "schema/breadcrumb-schema"}}
+    {{> "schema/itemlist-schema"}}
+
 </head>
 <body class="{{body_class}} has-mono-title has-sans-body">
 

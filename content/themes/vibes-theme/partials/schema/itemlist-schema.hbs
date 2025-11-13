@@ -1,0 +1,23 @@
+{{!-- 
+  ItemList Schema for archive pages
+  Helps search engines understand post collections
+--}}
+
+{{#is "home, index, tag, author"}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "itemListElement": [
+    {{#foreach posts}}
+    {
+      "@type": "ListItem",
+      "position": {{@number}},
+      "url": "{{url}}"
+    }{{#unless @last}},{{/unless}}
+    {{/foreach}}
+  ]
+}
+</script>
+{{/is}}
+

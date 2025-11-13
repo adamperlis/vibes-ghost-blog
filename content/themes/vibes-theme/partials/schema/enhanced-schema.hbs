@@ -1,0 +1,111 @@
+{{!-- 
+  Enhanced Schema.org structured data for Vibes theme
+  This provides additional schema markup beyond Ghost's default schema
+  Includes: BlogPosting, Organization details, and SearchAction
+--}}
+
+{{#post}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "{{url}}#blogposting",
+      "headline": "{{title}}",
+      "description": "{{#if custom_excerpt}}{{custom_excerpt}}{{else}}{{excerpt}}{{/if}}",
+      "datePublished": "{{date published_at format="YYYY-MM-DDTHH:mm:ssZ"}}",
+      "dateModified": "{{date updated_at format="YYYY-MM-DDTHH:mm:ssZ"}}",
+      {{#if feature_image}}
+      "image": {
+        "@type": "ImageObject",
+        "url": "{{img_url feature_image size="xl"}}",
+        "width": 1200,
+        "height": 630
+      },
+      {{/if}}
+      "author": {
+        "@type": "Person",
+        "name": "{{primary_author.name}}",
+        "url": "{{primary_author.url}}",
+        {{#if primary_author.profile_image}}
+        "image": {
+          "@type": "ImageObject",
+          "url": "{{img_url primary_author.profile_image size="m"}}"
+        },
+        {{/if}}
+        {{#if primary_author.bio}}
+        "description": "{{primary_author.bio}}",
+        {{/if}}
+        "sameAs": [
+          {{#if primary_author.website}}"{{primary_author.website}}"{{#if primary_author.twitter}},{{/if}}{{/if}}
+          {{#if primary_author.twitter}}"https://twitter.com/{{primary_author.twitter}}"{{#if primary_author.facebook}},{{/if}}{{/if}}
+          {{#if primary_author.facebook}}"https://facebook.com/{{primary_author.facebook}}"{{/if}}
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "{{@site.url}}#organization",
+        "name": "Vibes",
+        "description": "Where we track the culture, creativity, and chaos of building in public",
+        "url": "{{@site.url}}",
+        {{#if @site.logo}}
+        "logo": {
+          "@type": "ImageObject",
+          "url": "{{img_url @site.logo}}",
+          "width": 600,
+          "height": 60
+        },
+        {{/if}}
+        "sameAs": [
+          "https://github.com/adamperlis/vibes-theme"
+        ]
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{url}}"
+      },
+      {{#if tags}}
+      "keywords": [
+        {{#foreach tags}}
+        "{{name}}"{{#unless @last}},{{/unless}}
+        {{/foreach}}
+      ],
+      {{/if}}
+      {{#if primary_tag}}
+      "articleSection": "{{primary_tag.name}}",
+      {{/if}}
+      "inLanguage": "en-US",
+      "copyrightYear": "{{date published_at format="YYYY"}}",
+      "copyrightHolder": {
+        "@type": "Organization",
+        "@id": "{{@site.url}}#organization"
+      }
+    }
+  ]
+}
+</script>
+{{/post}}
+
+{{#page}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "{{url}}",
+  "url": "{{url}}",
+  "name": "{{title}}",
+  "description": "{{#if custom_excerpt}}{{custom_excerpt}}{{else}}{{excerpt}}{{/if}}",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "{{@site.url}}#organization",
+    "name": "Vibes",
+    "url": "{{@site.url}}"
+  },
+  "inLanguage": "en-US",
+  "datePublished": "{{date published_at format="YYYY-MM-DDTHH:mm:ssZ"}}",
+  "dateModified": "{{date updated_at format="YYYY-MM-DDTHH:mm:ssZ"}}"
+}
+</script>
+{{/page}}
+
